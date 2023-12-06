@@ -1,0 +1,12 @@
+class solution{
+public:
+int searchInsert(std::vector<int>& nums, int t){
+int n = nums.size();
+int i =0;
+while(i<n &&nums[i]<t){
+i++;
+}
+nums.insert(nums.begin()+i, t):
+return i;
+}
+}
